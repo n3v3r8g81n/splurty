@@ -9,7 +9,10 @@ class QuotesController < ApplicationController
     end
 
   def create
-    Quote.create(quote_params)
+    @quote = Quote.create(quote_params)
+    if @quote.invalid?
+      flash[:error] = '<strong>Could not add</strong> the quote. The saying must have 4 to 140 characters. The author must have 2 to 50 characters. Click Contribute again.'
+      end
     redirect_to root_path
     end
 
