@@ -1,2 +1,4 @@
 class Quote < ApplicationRecord
-end
+  validates :saying, presence: true, length: { maximum: 140, minimum 4 }
+  end
+
