@@ -3,7 +3,6 @@
 */
 .about {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-
 }
 
 .clear {
@@ -28,6 +27,10 @@
     -ms-transform:rotate(11deg); /* IE 9 */
     -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
 }
+
+.float-right {
+  text-align: right;
+  }
 
 .footer-blurb {
     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
@@ -57,6 +60,10 @@
   text-decoration: none;
 }
 
+.modal {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+
 .modal-title {
   font-family: 'kaushan_scriptregular', sans-serif;
   font-weight: bold;
@@ -73,6 +80,13 @@ body {
   margin-left: 100px;
   }
 
+h2 span {
+  color: #dddddd;
+    font-family: 'kaushan_scriptregular', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
 header {
   border-top: 9px solid #222222
 }
@@ -88,4 +102,14 @@ h2 {
   font-size: 30px;
   font-weight: italic;
   
+}
+
+@media (max-width: 750 px) {
+    .footer-blurb {
+      text-align: left;
+    }
+}
+
+::selection {
+  background-color: #f84342;
 }
